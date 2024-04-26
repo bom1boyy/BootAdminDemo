@@ -8,4 +8,4 @@ WORKDIR /app
 COPY ./build/libs/BootAdminDemo-0.0.1-SNAPSHOT.jar /app/BootAdmin-1.0.jar
 
 # 컨테이너가 실행될 때 실행될 명령어 설정
-CMD ["java", "-jar", "BootAdmin-1.0.jar"]
+ENTRYPOINT ["java", "-jar", "BootAdmin-1.0.jar"]
