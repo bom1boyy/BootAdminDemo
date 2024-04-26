@@ -5,7 +5,7 @@ FROM openjdk:21-jdk
 WORKDIR /app
 
 # 호스트 머신에서 빌드된 JAR 파일을 현재 디렉토리의 /app 디렉토리로 복사 ( 어플리케이션명은 빌드된 파일 이름으로 변경 )
-COPY build/libs/BootAdminDemo-0.0.1-SNAPSHOT.jar /app/BootAdmin-1.0.jar
+COPY ./build/libs/BootAdminDemo-0.0.1-SNAPSHOT.jar /app/BootAdmin-1.0.jar
 
 # 컨테이너가 실행될 때 실행될 명령어 설정
 CMD ["java", "-jar", "BootAdmin-1.0.jar"]
